@@ -15,10 +15,13 @@ static const char* const nord[] = { "#121212", "#3b4252", "#434c5e", "#4c566a",
 				    "#bf616a", "#d08770", "#ebcb8b", "#a3be8c", "#b48ead" };
 
 static const char *colors[SchemeLast][2] = {
-	/*               fg       bg      */
-	[SchemeNorm] = { nord[4], nord[0]  },
-	[SchemeSel]  = { nord[0], nord[9]  },
-	[SchemeOut]  = { nord[0], nord[14] },
+	/*                          fg        bg       */
+	[SchemeNorm]		= { nord[4],  nord[0]  },
+	[SchemeNormHighlight]	= { nord[13], nord[0]  },
+	[SchemeSel]		= { nord[0],  nord[9]  },
+	[SchemeSelHighlight]	= { nord[13], nord[9]  },
+	[SchemeOut]		= { nord[0],  nord[14] },
+	[SchemeOutHighlight]	= { nord[13], nord[14] },
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 0;
