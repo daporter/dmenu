@@ -9,19 +9,19 @@ static const char *fonts[] = {
 	"Iosevka Nerd Font Propo:pixelsize=11:antialias=true:autohint=true"
 };
 static const char *prompt = NULL;      /* -p  option; prompt to the left of input field */
-static const char* const nord[] = { "#121212", "#3b4252", "#434c5e", "#4c566a",
-				    "#8892a4", "#e5e9f0", "#eceff4",
+static const char* const nord[] = { "#121212", "#2e3440", "#434c5e", "#4c566a",
+				    "#d8dee9", "#e5e9f0", "#eceff4",
 				    "#8fbcbb", "#88c0d0", "#81a1c1", "#5e81ac",
 				    "#bf616a", "#d08770", "#ebcb8b", "#a3be8c", "#b48ead" };
 
 static const char *colors[SchemeLast][2] = {
 	/*                          fg        bg       */
-	[SchemeNorm]		= { nord[4],  nord[0]  },
-	[SchemeNormHighlight]	= { nord[13], nord[0]  },
-	[SchemeSel]		= { nord[0],  nord[9]  },
-	[SchemeSelHighlight]	= { nord[13], nord[9]  },
+	[SchemeNorm]		= { nord[4],  nord[0] },
+	[SchemeNormHighlight]	= { nord[4],  nord[1] },
+	[SchemeSel]		= { nord[0],  nord[9] },
+	[SchemeSelHighlight]	= { nord[0],  nord[10] },
 	[SchemeOut]		= { nord[0],  nord[14] },
-	[SchemeOutHighlight]	= { nord[13], nord[14] },
+	[SchemeOutHighlight]	= { nord[13], nord[0] },
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 0;
